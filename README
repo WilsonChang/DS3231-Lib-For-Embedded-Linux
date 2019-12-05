@@ -1,0 +1,6 @@
+C codes for DS3231 I2c real clock module
+read DS3231 data using Linux device file: /dev/i2c-x
+you need root rights to open device file.
+
+
+
