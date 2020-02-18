@@ -38,8 +38,8 @@ int main(void)
 	ds3231init("/dev/i2c-1", 0x68);
         d = ds3231readall();
 
-        printf("time: 20%s-%s-%s\n", d->stryear, d->strmonth, d->strday);
-        printf("date: %s:%s:%s\n", d->strhour, d->strmonth,d->strsecond);
+        printf("date: 20%s-%s-%s\n", d->stryear, d->strmonth, d->strday);
+        printf("time: %s:%s:%s\n", d->strhour, d->strminute,d->strsecond);
         printf("weekday: %s\n", d->strweekday);
  
 	ds3231close();
